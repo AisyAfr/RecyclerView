@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    >
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="match_parent"
+        android:layout_height="299dp"
+        android:src="@drawable/doofus_rick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/character_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_detail"
+        app:layout_constraintBottom_toTopOf="@id/description_card"
+        android:layout_marginTop="20dp"
+        android:text="Doofus Rick"
+        android:fontFamily="@font/harryp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="90sp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/description_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/character_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#03A9F4"
+        app:cardCornerRadius="20dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tv_ask_species"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp"
+                android:text="Species :"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_species"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp"
+                android:text="Human"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@id/tv_ask_species"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_ask_age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp"
+                android:text="Age :"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_ask_species" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp"
+                android:text="70"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@id/tv_ask_age"
+                app:layout_constraintTop_toBottomOf="@id/tv_ask_species" />
+
+            <TextView
+                android:id="@+id/tv_ask_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp"
+                android:text="Status :"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_ask_age" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp"
+                android:text="Alive"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@id/tv_ask_status"
+                app:layout_constraintTop_toBottomOf="@id/tv_ask_age" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

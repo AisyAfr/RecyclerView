@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+
+    <string-array name="data_species">
+        <item>Human</item>
+        <item>Cybernetically Enhanced</item>
+        <item>Cybernetically Enhanced</item>
+        <item>Pickle</item>
+        <item>Unknown</item>
+        <item>Human</item>
+        <item>Cronenberg</item>
+        <item>Human</item>
+    </string-array>
+
+    <string-array name="data_age">
+        <item>70 (chronological)</item>
+        <item>70</item>
+        <item>70</item>
+        <item>70</item>
+        <item>Unknown</item>
+        <item>Unknown</item>
+        <item>70</item>
+        <item>70</item>
+    </string-array>
+
+    <string-array name="data_status">
+        <item>Alive</item>
+        <item>Alive</item>
+        <item>Deactivated</item>
+        <item>Unknown</item>
+        <item>Unknown</item>
+        <item>Defunct</item>
+        <item>Presumed deceased</item>
+        <item>Deceased</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/rick_prime</item>
+        <item>@drawable/rick_sanchez</item>
+        <item>@drawable/evil_rick_sanchez</item>
+        <item>@drawable/pickle_rick</item>
+        <item>@drawable/doofus_rick</item>
+        <item>@drawable/council_of_ricks</item>
+        <item>@drawable/cronenberg_rick</item>
+        <item>@drawable/rick_sanchez_c_137</item>
+    </integer-array>
+
+    <string-array name="data_name">
+        <item>Rick Prime</item>
+        <item>Rick Sanchez</item>
+        <item>Evil Rick Sanchez</item>
+        <item>Pickle Rick</item>
+        <item>Doofus Rick</item>
+        <item>Council Of Ricks</item>
+        <item>Cronenberg Rick</item>
+        <item>Rick Sanchez C-137</item>
+    </string-array>
+
+</resources>
